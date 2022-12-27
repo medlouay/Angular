@@ -12,6 +12,9 @@ import { ServerService } from './service/server.service';
 })
 export class AppComponent implements OnInit {
   appState$: Observable<AppState<CustomResponse>>;
+  readonly DataState = DataState;
+
+
   constructor(private serverService: ServerService) { }
 
 
